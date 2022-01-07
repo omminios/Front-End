@@ -1,139 +1,105 @@
-body
-{
-margin: 0px 140px 0px 140px;
-font-family: Rockwell;
+* {
+    --linkedin-blue: #0e76a8;
+}
 
+body {
+    margin: 0;
 }
-#left_border
-{
-position: relative;
-height: 100%;
-border-left: 70px solid orange;
-padding-left: 50px;
-}
-#right_border
-{
-position: relative;
-height: 220%;
-border-right: 70px solid orange;
-padding-right: 50px;
-}
-#header
-{
-background-color: Black;
-padding-bottom: 6%;
-}
-h1
-{
-	color: orange;
-	font-size: 30px;
-	font-family: Rockwell;
-	position: absolute;
-	left: 45%;
-	
-}
-h2
-{
-	color: white;
-	text-align: center;
-}
-h3
-{
-font-weight: bold;
-color: orange;
-text-align: center;
 
+.navbar {
+    background-color: black;
+    color: white;
+    display: grid;
 }
-#positioning_a
-{
-position: absolute;
-left: 65%;
-top: 3.5%;
-color: orange;
-font-size: 21px;
-font-family: Rockwell;	
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
-#positioning_b
-{
-position: absolute;
-left: 70.5%;
-top: 3.5%;
-font-size: 21px;
-font-family: Rockwell;
+
+#header div {
+    display: flex;
+    gap: 0.5vw;
+    color: white
 }
-#positioning_c
-{
-position: absolute;
-top: 3.1%;
-left: 15.5%;
-color: orange;
-font-size: 21px;
-font-family: Rockwell;
+
+#header a {
+    color: white;
+    text-decoration: none;
 }
-#positioning_d
-{
-position: absolute;
-top: 3.3%;
-left: 29.5%;
-font-size: 21px;
-font-family: Rockwell;
+
+#email-div>div:first-child,
+#phone-div>div:first-child,
+#header h1,
+h3 {
+    color: orange;
 }
-a[href^="mailto:"]
-{ 
-  color: white;
-  text-decoration: none;
-}
+
 img
 {
-	position: relative;
-	width: 110px;
-	height: auto;
-	left: 90%;
-	margin-top: 30px;
-}
-footer
-{
-background-color: Black;
-padding-bottom: 70px;
-margin-top: 50px;
-margin-top: 60px;
-}
-.Right_Side
-{
-margin-left: 80%;
-
-}
-.Upwards
-{
-position: relative;
-bottom: 20px;
+    position: static;
+    width: 6.875em;
+    height: auto;
 }
 
-.pretty
-{
-background-color: #0e76a8;
-color: White;
-padding: 20px 20px 20px 20px;
-text-align: center;
-position: relative;
-left: 42.5%;
-top: 25px;
-text-decoration: none;
+.container h3 {
+    display: grid;
+    place-content: center;
 }
+
+.weight {
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    background-color: white;
+    margin: 0 5vw;
+    padding: 2rem;
+}
+
+#skills ul,
+#experience ul,
+#education ul,
+#aws-section ul {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vertical-gap {
+    display: grid;
+    gap: 1rem;
+}
+
+
 #footer
 {
-background-color: Black;
-padding-bottom: 70px;
-border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
-.weight
-{
-	font-weight: bold;
-}
+
 .Counter
 {
-	position: relative;
-	top: 60px;
-	left: 25px;
-	color: white;
+    color: white;
+
+
+}
+.button {
+    background-color: var(--linkedin-blue);
+    color: White;
+    padding: 1.25em;
+    text-decoration: none;
+
+}
+
+.bg-orange {
+    background-color: orange;
 }
